@@ -1,4 +1,7 @@
-use binseq::{MmapReader, RefRecord as BinseqRefRecord};
+use binseq::{
+    bq::{MmapReader, RefRecord as BinseqRefRecord},
+    BinseqRecord,
+};
 use std::path::Path;
 
 // Create wrapper types for the binseq library
@@ -71,7 +74,7 @@ impl<'a> RecordWrapper<'a> {
     }
 
     pub fn is_paired(&self) -> bool {
-        self.record.paired()
+        self.record.is_paired()
     }
 
     pub fn slen(&self) -> usize {
