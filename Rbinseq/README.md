@@ -1,6 +1,6 @@
 # Rbinseq
 
-R bindings for the BinSeq format, a highly compressed binary format for storing sequencing data.
+(POC) R bindings for the BinSeq format, a highly compressed binary format for storing sequencing data.
 
 > **Note:** This is a proof of concept binding for the BinSeq library. It demonstrates how the BinSeq format can be integrated with R but may not be feature-complete for production use.
 
